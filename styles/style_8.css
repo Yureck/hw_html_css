@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 100%;
+    background-color: #EEF3FA;
+    font-family: 'Open Sans', sans-serif;
+}
+.content {
+    background-color: white;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10% ;
+    padding: 5rem 0;
+}
+.grid-container h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.grid-container .main-info p {
+    margin: 2rem 0;
+}
+.grid-container a.btn {
+    display: inline-block;
+    color: #b11c61;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #b11c61;
+    border-radius: .25rem;
+    padding: 0.8rem 3.5rem;
+    margin-bottom: 2rem;
+}
+.grid-container a.btn:hover {
+    text-decoration: underline;
+}
+.grid-container .secondary-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+.grid-container .secondary-info .heading {
+    margin: 1.5rem 0 1rem 0;
+}
+.grid-container .secondary-info p {
+    color: #9c9c9c;
+}
+.grid-container .secondary-info .options-item {
+    margin-bottom: 1rem;
+}
+.grid-container .secondary-info .options-item span {
+    color: #b11c61;
+}
+
+@media screen and (max-width: 930px) {
+    .grid-container {
+        grid-template-rows: minmax(auto, 70%) 1fr;
+        grid-template-columns: 1fr;
+
+    }
+    .grid-container .main-info {
+        text-align: center;
+    }
+}
